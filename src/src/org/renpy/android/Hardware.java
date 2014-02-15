@@ -95,7 +95,7 @@ public class Hardware {
          */
         public void changeStatus(boolean enable) {
             if (enable) {
-                sSensorManager.registerListener(this, sSensor, SensorManager.SENSOR_DELAY_NORMAL);
+                sSensorManager.registerListener(this, sSensor, SensorManager.SENSOR_DELAY_FASTEST);
             } else {
                 sSensorManager.unregisterListener(this, sSensor);
             }
